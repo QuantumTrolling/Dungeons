@@ -29,6 +29,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.dungens.init.DungensModTabs;
+import net.mcreator.dungens.init.DungensModItems;
+import net.mcreator.dungens.init.DungensModEntities;
+
 import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.function.BiConsumer;
@@ -46,6 +50,11 @@ public class DungensMod {
 	public DungensMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		DungensModItems.REGISTRY.register(bus);
+		DungensModEntities.REGISTRY.register(bus);
+
+		DungensModTabs.REGISTRY.register(bus);
 
 	}
 

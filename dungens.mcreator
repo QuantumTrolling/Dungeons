@@ -1,9 +1,28 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Helheimwarrior",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "helheimwarrior",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dungens/client/renderer/HelheimwarriorRenderer.java",
+          "src/main/resources/assets/dungens/models/item/helheimwarrior_spawn_egg.json",
+          "src/main/java/net/mcreator/dungens/entity/model/HelheimwarriorModel.java",
+          "src/main/java/net/mcreator/dungens/entity/HelheimwarriorEntity.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.dungens.helheimwarrior_spawn_egg": "Helheimwarrior Spawn Egg",
+      "entity.dungens.helheimwarrior": "Helheimwarrior"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -21,8 +40,13 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "geckolib",
+      "playeranimator"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.dungens",
     "lockBaseModFiles": false
   },
