@@ -15,6 +15,7 @@
     {
       "name": "BiomeConditions",
       "type": "procedure",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "biome_conditions",
@@ -23,6 +24,53 @@
           "src/main/java/net/mcreator/dungens/procedures/BiomeConditionsProcedure.java"
         ],
         "dependencies": []
+      }
+    },
+    {
+      "name": "Test",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dungens/forge/biome_modifier/test_biome_modifier.json",
+          "src/main/resources/data/dungens/worldgen/configured_feature/test.json",
+          "src/main/resources/data/dungens/worldgen/placed_feature/test.json",
+          "src/main/java/net/mcreator/dungens/world/features/TestFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "TestAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/dungens/procedures/TestAdditionalGenerationConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     }
   ],
