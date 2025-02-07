@@ -1,28 +1,9 @@
 {
-  "mod_elements": [
-    {
-      "name": "Helheimwarrior",
-      "type": "animatedentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "helheimwarrior",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/dungens/client/renderer/HelheimwarriorRenderer.java",
-          "src/main/resources/assets/dungens/models/item/helheimwarrior_spawn_egg.json",
-          "src/main/java/net/mcreator/dungens/entity/model/HelheimwarriorModel.java",
-          "src/main/java/net/mcreator/dungens/entity/HelheimwarriorEntity.java"
-        ]
-      }
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "item.dungens.helheimwarrior_spawn_egg": "Helheimwarrior Spawn Egg",
-      "entity.dungens.helheimwarrior": "Helheimwarrior"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
