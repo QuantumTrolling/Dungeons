@@ -1,9 +1,37 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Helheim",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "helheim",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dungens/worldgen/biome/helheim.json"
+        ]
+      }
+    },
+    {
+      "name": "BiomeConditions",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biome_conditions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dungens/procedures/BiomeConditionsProcedure.java"
+        ],
+        "dependencies": []
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.dungens.helheim": "Helheim"
+    }
   },
   "foldersRoot": {
     "name": "~",
